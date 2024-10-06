@@ -4,6 +4,7 @@
 - [Chapter 2 Memtable](./chapter_2_memtable.md)
 - [Chapter 3 Storage Engine](./chapter_3_storage.md)
   - [Block](./storage/block.md)
+  - [Bloom Filter](./storage/read_path_bloom_filter.md)
 - [Chapter Compaction](./chapter_compaction.md)
 - [Chapter Manifest File](./chapter_manifest.md)
 - [Chapter Write-Ahead Log](./chapter_wal.md)
