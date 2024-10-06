@@ -14,3 +14,6 @@ impl Memtable {
     }
 }
 ```
+
+why organize memtable as a tree?
+
