@@ -1,0 +1,5 @@
+[package]
+name = "chapt6_object_storage"
+
+[dependencies]
+object_store = "0.11.0"
