@@ -25,36 +25,7 @@ An SSTable uses a Log-Structured Merge (LSM) tree data structure format. This fo
 
 ### Reading from SSTable and bloom filter
 
-Bloom filter is used to avoid unnecessary disk I/O. Instead of reading the whole SSTable to memory, we check the bloom filter first to see if the key exists, if not we return immediately.
-
-Bloom filter is a memory-efficient, probabilistic data structure that can give us an exact no answer and an approximate yes answer to whether an element is in a set.
-
-```rust
-impl SSTable {
-    // other methods
-    fn get(&self, key: &[u8]) -> Option<LSMEntry> {
-        // return immediate to avoid disk IO if the key not in bloom filter
-        if !self.bloom_filter.test(key) {
-            return None
-        }
-    }
-}
-```
-
-```rust
-// bloom.rs
-pub struct Bloom {
-    filter: Bytes,
-}
-
-impl Bloom {
-    pub fn test(&self, hash: u32) -> bool {
-        
-    }
-}
-```
-
-Writing your own bloom filter is interesting. Here we delay it as an add-on item for later, now we are going to use an existing crate to understand the high-level building blocks of the database first.
+bloom filter having its own module now
 
 ## References
 - https://www.scylladb.com/glossary/sstable/
