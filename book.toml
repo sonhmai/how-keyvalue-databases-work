@@ -2,5 +2,5 @@
 authors = ["sonhmai"]
 language = "en"
 multilingual = false
-src = "src"
+src = "book-src"
 title = "How Key Value Databases Work"
