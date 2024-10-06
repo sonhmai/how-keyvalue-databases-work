@@ -15,6 +15,8 @@ Three main components of a key-value databases are
 
 `memtable` is an in-memory data structure that serves reads and writes. New writes go to the wal for persistence. The WAL is regularly sends to object storage for durability.
 
+The words memtable and SSTable started from [the Google Bigtable paper](https://research.google/pubs/bigtable-a-distributed-storage-system-for-structured-data/)
+
 ## The simplest storage engine
 
 TODO

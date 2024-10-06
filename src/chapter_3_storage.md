@@ -1,6 +1,15 @@
-# Chapter 3 Sorted String Table
+# Chapter 3 Storage Engine
+
+Contents
+- How is storage engine implemented with SSTable and LSM tree
+
+> a nice overview picture taken from https://kflu.github.io/2018/02/09/2018-02-09-lsm-tree/
 
 ![img.png](img.png)
+
+Quoting this good piece from [David Archuleta Jr.'s Blog - LSM Trees, Memtables & Sorted String Tables: An Introduction:](https://www.darchuletajr.com/blog/lsm-trees-memtables-sorted-string-tables-introduction)
+
+> The on-disk component of the LSM Tree is the Sorted String Table. In order to write the contents of a sorted data structure, whether a tree, skip list, vector, or any other data structure, you just need to iterate in order from the lowest value to the highest. So it is a very simple and straightforward linear operation.
 
 ## Sorted String Table
 
