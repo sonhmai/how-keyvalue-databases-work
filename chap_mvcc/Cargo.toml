@@ -1,5 +1,4 @@
 [package]
-name = "chapt6_object_storage"
+name = "mvcc"
 
 [dependencies]
-object_store = "0.11.0"
